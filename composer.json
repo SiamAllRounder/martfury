@@ -35,7 +35,7 @@
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.7",
+        "barryvdh/laravel-debugbar": "^3.8",
         "barryvdh/laravel-ide-helper": "^2.12",
         "botble/git-commit-checker": "^2.0",
         "fakerphp/faker": "^1.9.1",
