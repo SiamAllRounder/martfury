@@ -129,10 +129,10 @@
                     <div class="navigation__right">
                         {!! Menu::renderMenuLocation('main-menu', [
                             'view'    => 'menu',
-                            'options' => ['class' => 'menu'],
+                            'options' => ['class' => 'menu row'],
                         ]) !!}
                         @if (is_plugin_active('ecommerce'))
-                            <ul class="navigation__extra">
+                            <ul class="navigation__extra ml-3">
                                 @if (is_plugin_active('marketplace'))
                                     <li><a href="{{ !auth('customer')->check() ? route('customer.register') : (auth('customer')->user()->is_vendor ? route('marketplace.vendor.dashboard') : route('marketplace.vendor.become-vendor')) }}">{{ __('Sell On Martfury') }}</a></li>
                                 @endif
@@ -162,7 +162,21 @@
                     </div>
                 </div>
             </nav>
+            <style>
+               
+                ul.menu {
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                    max-width: 38vw;
+                }
+                ul.menu.row {
+                    flex-wrap: nowrap;
+                }
+
+               
+            </style>
         </header>
+
         @if (Theme::get('headerMobile'))
             {!! Theme::get('headerMobile') !!}
         @else
