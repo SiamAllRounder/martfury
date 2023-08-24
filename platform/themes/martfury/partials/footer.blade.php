@@ -32,6 +32,21 @@
                     {!! dynamic_sidebar('bottom_footer_sidebar') !!}
                 </div>
             @endif
+            <style>
+                #footer-links  div {
+
+display: table-cell;
+
+}
+                @media (max-width: 767px) {
+
+                    #footer-links  div {
+
+                        display: block;
+
+                    }
+}
+            </style>
             <div class="ps-footer__copyright">
                 <p>{{ theme_option('copyright') }}</p>
                 @php $paymentMethods = array_filter(json_decode(theme_option('payment_methods', []), true)); @endphp
