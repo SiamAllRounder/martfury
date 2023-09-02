@@ -830,4 +830,5 @@
     $(window).on('resize', function () {
         collapseBreadcrumb();
     });
+   
 })(jQuery);

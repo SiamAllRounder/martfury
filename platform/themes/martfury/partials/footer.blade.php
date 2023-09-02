@@ -1,4 +1,34 @@
  <footer class="ps-footer">
+    <div id="partner-ads" style="margin-bottom:6rem;border-bottom: 1px solid #e1e1e1;" class="ps-container">
+        <h1>Partners</h1>
+        <div class="multiple-items">
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+            <a href="#"><img src="http://martfury.test/storage/brands/2.jpg" alt=""></a>
+
+        </div>
+
+    </div>
+  
         <div class="ps-container">
             <div class="ps-footer__widgets">
                 @if (theme_option('hotline') || theme_option('address') || theme_option('email') || theme_option('social-name-1'))
@@ -164,4 +194,14 @@ display: table-cell;
          </script>
      @endif
     </body>
+    <script>
+         $('.multiple-items').slick({
+            autoplay:true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1
+      });
+      $('#partner-ads > div > button.slick-prev.slick-arrow').hide();
+      $('#partner-ads > div > button.slick-next.slick-arrow').hide();
+    </script>
 </html>
