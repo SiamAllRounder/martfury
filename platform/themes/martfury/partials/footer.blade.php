@@ -282,6 +282,8 @@
 
 
      });
+     $('body > header.header.header--1 > nav > div > div.navigation__right > ul.navigation__extra.ml-3 > li:nth-child(1) > a')
+         .html("Become Seller");
  </script>
 
  </html>
